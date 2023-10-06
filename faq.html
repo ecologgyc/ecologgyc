@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>FAQ</title>
+    <style>
+        .title{
+            color: black;
+            padding: 30px;
+            margin: 5rem 0rem;
+        }
+        .sub_title{
+            color: black;
+            padding: 30px;
+            margin-top: -110px;
+            
+        }
+
+        section{
+            min-height: 100vh;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            font-weight: lighter;
+           
+        }
+
+        
+        .faq{
+            max-width: 700px;
+            margin-top: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid green;
+            cursor: pointer;
+           
+        }
+
+        .question{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+            
+            
+        }
+
+        .question h3{
+            font-size: 1.6rem;
+           
+            
+        }
+
+        .answer{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+
+        .answer p{
+            padding-top: 1rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .faq.active .answer{
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+        }
+
+        .faq.active svg{
+            transform: rotate(180deg);
+        }
+
+        svg{
+            transition: transform .5s ease-in;
+        }
+
+        @keyframes fade{
+            from{
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <nav>
+		<div class="logo"> Ecologgyc </div>
+
+		<ul>
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="sobre.html"> Sobre</a> </li>
+			<li> <a href="criadores.html"> Criadores</a> </li>
+            <li> <a href="faq.html">FAQ</a></li>
+		</ul>
+	</nav>
+    
+    <section>
+        
+            <h2 class="title">Aqui você encontrará perguntas frequentes sobre poluição.</h2>
+       
+       
+            <h3 class="sub_title">Fique a vontade para explorar e tirar suas dúvidas.</h3>
+        
+        <div class="faq">
+            <div class="question">
+                <h3>O que é a poluição?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>
+                    Poluição é a introdução de substâncias ou energia de forma acidental ou intencional no meio ambiente, com consequências negativas para os seres vivos.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>O que a poluição pode causar?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>
+                    A poluição pode acarretar em problemas patológicos, destruição ambiental e alterações climáticas. Exemplos: Doenças e problemas respiratórios e de pele, alergias, doenças nos olhos, hepatite, micose, diarreia, otite, surdez. Má formação de feto.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Quais são os tipos de poluição?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>
+                    Poluição atmosférica, Poluião hídrica, Poluição do solo, Poluição térmica, Poluição sonora e visual, Poluição luminosa e Poluição radioativa.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Quais delas são mais comuns no Brasil?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>No ranking de países mais poluidores do mundo, o Brasil ocupa a sexta posição, emitindo sobretudo gases do efeito estufa. A maioria das emissões está associada ao desmatamento e à degradação do solo, ou seja, em razão de poluição atmosférica e do solo.
+            Segundo pesquisas da OMS, a quantia de poluentes considerada aceitável para um metro cúbico de ar é de, no máximo, 20 microgramas.
+            Nesse caso, as cidades do Rio de Janeiro (RJ), São Paulo (SP), Cubatão (SP), Campinas (SP) e Curitiba (PR) são vistas como as mais poluídas do país. De modo geral, todos os tipos de poluição estão presentes nos centros urbanos destacados. No entanto, as mais comuns são, sem dúvida, poluição atmosférica, hídrica e térmica.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Qual a maior fonte de poluição do mundo?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>
+                    Dentre as principais fontes de emissão de poluentes, podemos destacar as indústrias, a queima de lixo, os veículos automotores e aviões. Vale destacar que alguns processos naturais levam à emissão de poluentes, como é o caso das erupções vulcânicas, tempestades de areia e incêndios florestais não criminosos.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Quais são as causas da poluição sonora e como ela pode ser controlada?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>As principais fontes de poluição sonora são: os transportes urbanos; aeroportos; as buzinas e sirenes; as construções; as máquinas; casas de show e templos religiosos; os aparelhos de som, entre outros.</p>
+                <p>Para evitar a poluição sonora, é necessário, segundo o Ministério Público, restringir os sons ao ambiente em que eles são gerados. Isolamentos acústicos, muitas vezes, são uma opção. Evitar ambientes com muitos ruídos, som alto ou muita conversa.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>Como podemos combater a poluição e reduzir seus efeitos?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                    <path 
+                      d="M3 3L21 21L39 3"
+                      stroke="white"
+                      stroke-width="7"
+                      stroke-linecap="round"
+                    />
+                </svg>
+
+            </div>
+            <div class="answer">
+                <p>
+                    Separar o lixo orgânico e reciclável;
+                    <br>
+                    Evitar o uso de sacolas plásticas;
+                    <br>
+                    Reutilizar embalagens sempre que possível;
+                    <br>
+                    Evitar utilizar o carro, preferindo sempre caminhadas, bicicletas e transporte público;
+                    <br>
+                    Não jogar lixo nas ruas;
+                    <br>
+                    Não realizar queimadas,
+                    
+                     e sempre que possível levar o óleo utilizado na cozinha para postos de coleta apropriados.
+                </p>
+            </div>
+        </div>
+        <br>
+
+        
+    </section>
+   
+  
+    <footer>
+        <div class="margin">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Ecologgyc</h1>
+                <p>Lutando por um mundo melhor </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/ecologgyc/" class="footer-link" target="_blank" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>About Us</h3>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="criadores.html" class="footer-link">Criadores</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Nosso Contato</h3>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ecologgyc/" target="_blank" class="footer-link">Instagram</a>
+                </li>
+                
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Entre com seu e-mail para receber notificações de outras notícias.
+                </p>
+
+                <form method="POST">
+                <div id="input_group">
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                    <button type="submit">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
+
+    <script src="./js/faq.js"></script>
+</body>
+</html>

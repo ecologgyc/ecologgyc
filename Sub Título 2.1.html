@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/css.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<title>A nova tática para diminuir a poluição na Itália: reduzir o limite de velocidade</title>
+</head>
+<body>
+	<nav>
+		<div class="logo"> Ecologgyc </div>
+
+		<ul>
+			<li> <a href="index.html" > Home </a> </li>
+			<li> <a href="sobre.html"> Sobre</a> </li>
+			<li> <a href="criadores.html"> Criadores</a> </li>
+            <li> <a href="faq.html">FAQ</a></li>
+		</ul>
+	</nav>
+
+    <div id="main">
+      <div class="espaco">
+        <div class="container">
+            <div class="espaco-geral main-espaco-geral">
+                <div class="col-8">
+
+                    <section>
+                        <h2 style="font-weight: normal;">A nova tática para diminuir a poluição na Itália: reduzir o limite de velocidade</h2>
+                        <br>
+                        <hr style="margin-top: -19px; margin-bottom: 0px;" color="#e7e5e5" size="1">                        
+                        <p style="color:#3a3a3a;" >Luis Afonsoㅤ|ㅤ14/06/2023, 15h10</p>
+                        <hr style="margin-top: -19px; margin-bottom: 5px;" color="#e7e5e5" size="1"> 
+                        <br>                       
+                        <img src="https://s2-g1.glbimg.com/8fInzpgUspVhFHuOfXaS14unRrE=/0x0:4500x2904/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/s/s/TixgdpTU23YI4lTXBZFA/1q350x-highres.jpg" width="676" height="355" alt="hidre">
+                        <p style="text-align: center; color:#3a3a3a; font-size: 12pt">(Estrada perto da cidade de Milão, na Itália — Foto:G1)</p>
+                        <hr style="margin-top: -15px; margin-bottom: 5px;" color="#fff">                        
+                        <p>A Itália concedeu autorização aos governos regionais para diminuir os limites de velocidade em estradas que atravessam áreas urbanas. A medida foi implementada a partir de quarta-feira, dia 14.</p>
+                        <p>Essa redução na velocidade pode ser aplicada tanto de forma temporária quanto permanente, sempre que houver a necessidade de controlar as emissões de poluentes provenientes do tráfego veicular e garantir níveis adequados de qualidade do ar.</p>
+                        <p>Atualmente, o limite de velocidade nas rodovias italianas é de 130 km/h, embora em determinados trechos esse limite já seja menor, estabelecido em 110 km/h.</p>
+                        <p>Essa normativa representa uma iniciativa do governo italiano para alinhar o país com as diretrizes da União Europeia. É relevante mencionar que dentro do governo italiano, não há consenso quanto a essa medida, já que o Ministro dos Transportes, Matteo Salvini, havia mencionado no mês passado a possibilidade de aumentar o limite de velocidade nas estradas para 150 km/h.</p>
+                    </section>
+
+                    <div id="comentarios">
+                        <h2>Deixe seu comentário</h2>
+                        <input type="text" id="nome" placeholder="Seu Nome">
+                        <textarea id="comentario" placeholder="Seu Comentário"></textarea>
+                        <button id="enviar">Enviar Comentário</button>
+                        <div id="exibicao-comentarios"></div>
+                      </div>
+                    
+                      <script>
+                        const comentarios = [];
+                    
+                        function adicionarComentario() {
+                          const nome = document.getElementById("nome").value;
+                          const comentario = document.getElementById("comentario").value;
+                    
+                          if (nome && comentario) {
+                            const novoComentario = { nome, comentario };
+                            comentarios.push(novoComentario);
+                            exibirComentarios();
+                            limparCampos();
+                          }
+                        }
+                    
+                        function exibirComentarios() {
+                          const exibicaoComentarios = document.getElementById("exibicao-comentarios");
+                          exibicaoComentarios.innerHTML = "";
+                    
+                          comentarios.forEach((comentario, index) => {
+                            const divComentario = document.createElement("div");
+                            divComentario.className = "comentario";
+                            divComentario.innerHTML = `<strong>${comentario.nome}:</strong> ${comentario.comentario}`;
+                            exibicaoComentarios.appendChild(divComentario);
+                          });
+                        }
+                    
+                        function limparCampos() {
+                          document.getElementById("nome").value = "";
+                          document.getElementById("comentario").value = "";
+                        }
+                    
+                        document.getElementById("enviar").addEventListener("click", adicionarComentario);
+                    
+                        exibirComentarios();
+                      </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="margin">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Ecologgyc</h1>
+                <p>Lutando por um mundo melhor </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/ecologgyc/" class="footer-link" target="_blank" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>About Us</h3>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="criadores.html" class="footer-link">Criadores</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Nosso Contato</h3>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ecologgyc/" target="_blank" class="footer-link">Instagram</a>
+                </li>
+                
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Entre com seu e-mail para receber notificações de outras notícias.
+                </p>
+
+                <form method="POST">
+                <div id="input_group">
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                    <button type="submit">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

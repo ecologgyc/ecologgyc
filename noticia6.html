@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/css.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<title>Poluição no Rio Sena coloca em risco evento pré-olímpico de natação</title>
+</head>
+<body>
+	<nav>
+		<div class="logo"> Ecologgyc </div>
+
+		<ul>
+			<li> <a href="index.html" > Home </a> </li>
+			<li> <a href="sobre.html"> Sobre</a> </li>
+			<li> <a href="criadores.html"> Criadores</a> </li>
+            <li> <a href="faq.html">FAQ</a></li>
+		</ul>
+	</nav>
+
+    <div id="main">
+      <div class="espaco">
+        <div class="container">
+            <div class="espaco-geral main-espaco-geral">
+                <div class="col-8">
+
+                    <section>
+                        <h2 style="font-weight: normal;">Poluição no Rio Sena coloca em risco evento pré-olímpico de natação</h2>
+                        <br>
+                        <hr style="margin-top: -19px; margin-bottom: 0px;" color="#e7e5e5" size="1">                        
+                        <p style="color:#3a3a3a;" >Por Da Redaçãoㅤ|ㅤ4/08/2023, 17h43</p>
+                        <hr style="margin-top: -19px; margin-bottom: 5px;" color="#e7e5e5" size="1"> 
+                        <br>                       
+                        <img src="https://veja.abril.com.br/wp-content/uploads/2023/08/000_33QL26K.jpg?quality=90&strip=info&w=1280&h=720&crop=1" width="676" height="355" alt="hidre">
+                        <p style="text-align: center; font-size: 12pt; color:#3a3a3a;">(Evento pré-Olímpico de natação, em Paris. - Veja.com.br)</p>
+                        <hr style="margin-top: -15px; margin-bottom: 5px;" color="#fff">                        
+                        <p>Às vésperas do início do torneio, os participantes da Copa do Mundo de Natação em Águas Abertas enfrentaram uma situação desafiadora nesta sexta-feira, 4 de junho, em Paris. Devido a fortes chuvas, as águas do rio Sena sofreram uma degradação significativa em termos de qualidade sanitária, o que resultou na proibição de treinamentos, conforme comunicado pela Federação Francesa de Natação (FFN). Essa interrupção na preparação dos atletas aumenta as preocupações quanto às condições da cidade para sediar os Jogos Olímpicos de 2024.</p>
+                        <p>Apesar das dificuldades enfrentadas nesta sexta-feira, a competição feminina de nado de 10 quilômetros, programada para o sábado, permanece com a mesma data, enquanto novos testes estão sendo conduzidos para avaliar a qualidade da água do rio. Este evento é uma parte crucial das eliminatórias para os eventos da Olimpíada de Paris, que ocorrerá em julho do próximo ano.</p>
+                        <p>Um representante da Federação Francesa de Natação (FFN) informou que se a natação não puder ocorrer no sábado, as competições masculina e feminina serão realizadas no domingo, sem considerar uma mudança de local para a realização das provas.</p>
+                        <p>As intensas precipitações na região de Paris estão levando ao extravasamento do sistema de esgoto da metrópole, resultando na contaminação das águas do rio por organismos bacterianos, tais como a E.coli e o Enterococcus, de origem fecal.</p>
+                        <p>“Se os resultados forem ruins novamente, obviamente, para garantir a segurança dos nadadores, teremos que continuar com as mesmas restrições”, informou a engenheira Aurelie Lemaire, enquanto coletava amostras do Sena, à agência de notícias Reuters.</p>
+                        <p>A suspensão de um torneio de grande importância pré-Olimpíadas representaria uma situação desfavorável para as autoridades governamentais de Paris. Até agora, as etapas de classificação haviam sido conduzidas em locais distantes da capital francesa, como a Baía de Soma, no Mar Vermelho, no Egito, e o Golfo Arancini, na Sardenha, Itália.</p>
+                        <p>No contexto dos preparativos para os Jogos Olímpicos, as autoridades francesas têm concentrado seus esforços na despoluição do rio Sena, visando viabilizar a realização de competições de natação, como triatlo, maratona aquática e paratriatlo, nas suas águas. Um projeto que envolve um orçamento de 1,4 bilhão de euros (equivalente a cerca de 7,4 bilhões de reais) foi desenvolvido para esse fim. O foco principal dessa iniciativa foi a construção de um reservatório cilíndrico de concreto sob a Praça Marie Curie, próxima ao rio, com o objetivo de reter as águas pluviais, impedindo que o lixo das ruas seja levado para as águas do rio.</p>
+                    </section>
+
+                    <div id="comentarios">
+                        <h2>Deixe seu comentário</h2>
+                        <input type="text" id="nome" placeholder="Seu Nome">
+                        <textarea id="comentario" placeholder="Seu Comentário"></textarea>
+                        <button id="enviar">Enviar Comentário</button>
+                        <div id="exibicao-comentarios"></div>
+                    </div>
+                    
+                      <script>
+                        const comentarios = [];
+                    
+                        function adicionarComentario() {
+                          const nome = document.getElementById("nome").value;
+                          const comentario = document.getElementById("comentario").value;
+                    
+                          if (nome && comentario) {
+                            const novoComentario = { nome, comentario };
+                            comentarios.push(novoComentario);
+                            exibirComentarios();
+                            limparCampos();
+                          }
+                        }
+                    
+                        function exibirComentarios() {
+                          const exibicaoComentarios = document.getElementById("exibicao-comentarios");
+                          exibicaoComentarios.innerHTML = "";
+                    
+                          comentarios.forEach((comentario, index) => {
+                            const divComentario = document.createElement("div");
+                            divComentario.className = "comentario";
+                            divComentario.innerHTML = `<strong>${comentario.nome}:</strong> ${comentario.comentario}`;
+                            exibicaoComentarios.appendChild(divComentario);
+                          });
+                        }
+                    
+                        function limparCampos() {
+                          document.getElementById("nome").value = "";
+                          document.getElementById("comentario").value = "";
+                        }
+                    
+                        document.getElementById("enviar").addEventListener("click", adicionarComentario);
+                    
+                        exibirComentarios();
+                      </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="margin">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Ecologgyc</h1>
+                <p>Lutando por um mundo melhor </p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/ecologgyc/" class="footer-link" target="_blank" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>About Us</h3>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="criadores.html" class="footer-link">Criadores</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Nosso Contato</h3>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ecologgyc/" target="_blank" class="footer-link">Instagram</a>
+                </li>
+                
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+                <p>
+                    Entre com seu e-mail para receber notificações de outras notícias.
+                </p>
+
+                <form method="POST">
+                <div id="input_group">
+                    <input type="email" name="email" placeholder="Digite seu e-mail">
+                    <button type="submit">
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2023 todos os direitos reservados
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
